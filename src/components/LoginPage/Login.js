@@ -2,10 +2,15 @@ import React from 'react'
 import Input from '../input/Input'
 import Button from '../Button/Button'
 import Button2 from '../SignupButton/Button2'
+import { useState } from 'react'
+
 import './Login.css'
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
+
+
   return (
     <div>
       <div className='loginContainer'>
@@ -25,7 +30,9 @@ const Login = () => {
             </div>
             
             <div className='registerSection'>
-              <Button2 text='Create new account' />
+              <Link to='/register' className='registerLink' >
+                <Button2 text='Create new account'/>
+              </Link>
             </div>
           </form>
 
