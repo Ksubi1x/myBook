@@ -6,7 +6,6 @@ app.use(express.json())
 app.use(cors())
 
 // Connect to table we made in 'Models' folder
-
 const db = require('./models')
 
 // Post router
@@ -21,11 +20,12 @@ const commentsRouter = require('./routes/Comments')
 
 app.use('/comments', commentsRouter)
 
-// Users Router
+// Accounts router
 
-const usersRouter = require('./routes/Users')
+const accountsRouter = require('./routes/Accounts')
 
-app.use('/auth', usersRouter)
+app.use('/auth', accountsRouter)
+
 
 // start server
 
