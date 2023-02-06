@@ -1,0 +1,19 @@
+{
+  "name": "mybook",
+  "version": "1.0.0",
+  "description": "Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ksubi1x/myBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ksubi1x/myBook/issues"
+  },
+  "homepage": "https://github.com/Ksubi1x/myBook#readme"
+}
