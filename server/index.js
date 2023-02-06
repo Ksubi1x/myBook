@@ -3,6 +3,8 @@ const app = express()
 const cors = require('cors')
 const port = process.env.PORT || 3001
 
+// initialize app
+
 app.use(express.json())
 app.use(cors())
 
