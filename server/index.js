@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const port = 3001
 
 app.use(express.json())
 app.use(cors())
@@ -30,7 +31,7 @@ app.use('/auth', accountsRouter)
 // start server
 
 db.sequelize.sync().then(() => {
-    app.listen(3001, () => {
+    app.listen(port, () => {
         console.log('Listening on port 3001')
     })
 })
