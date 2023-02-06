@@ -42,7 +42,7 @@ router.post('/login', async (req, res) => {
             else {
                 // Creating access token for authentication
                 const accessToken = sign({username: user.username, id: user.id}, "importantCode" )
-                res.json(accessToken)
+                res.json( { token: accessToken, username: username, id: user.id } )
                 console.log('Login successful')
             }
             
