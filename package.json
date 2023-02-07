@@ -4,7 +4,7 @@
   "description": "Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "scripts": {
     "start": "cd server && node index.js",
