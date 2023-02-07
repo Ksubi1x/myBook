@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+require('dotenv').config()
 
 const PORT = 3001
 
@@ -37,6 +38,9 @@ app.use('/auth', accountsRouter)
 
 db.sequelize.sync().then(() => {
     app.listen(process.env.PORT || PORT, () => {
+    })
+    .catch((err) => {
+        console.log(err)
     })
 })
 
