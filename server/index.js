@@ -37,7 +37,9 @@ app.use('/auth', accountsRouter)
 
 db.sequelize.sync().then(() => {
     app.listen(PORT, () => {
+        console.log('server running')
     })
-    
+}).catch((err) => {
+    console.log(err)
 })
 
