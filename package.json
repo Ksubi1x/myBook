@@ -1,7 +1,7 @@
 {
   "name": "myBook",
   "version": "1.0.0",
-  "description": "Simple app with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
+  "description": "Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
   "main": "index.js",
   "dependencies": {
     "accepts": "^1.3.8",
