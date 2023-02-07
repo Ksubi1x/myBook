@@ -235,7 +235,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cd server && node index.js",
+    "start": "cd server && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
