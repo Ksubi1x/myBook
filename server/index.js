@@ -29,7 +29,6 @@ app.use('/comments', commentsRouter)
 
 const accountsRouter = require('./routes/Accounts')
 
-
 app.use('/auth', accountsRouter)
 
 
