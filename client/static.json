@@ -3,5 +3,13 @@
     "clean_urls": false,
     "routes": {
       "/**": "index.html"
-    }
+    },
+    
+    "headers": {
+        "/**": {
+          "Content-Security-Policy": "default-src 'none'; ..."
+        }
+      }
   }
+
+  
