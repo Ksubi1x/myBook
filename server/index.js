@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
+const PORT = process.env.PORT || 3001;
 
 // initialize app
 // Added procfiles
@@ -35,7 +36,7 @@ app.use('/auth', accountsRouter)
 // start server
 
 db.sequelize.sync().then(() => {
-    app.listen(process.env.PORT || 3001, () => {
+    app.listen(PORT, () => {
     })
     
 })
