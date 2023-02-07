@@ -36,7 +36,6 @@ app.use('/auth', accountsRouter)
 
 db.sequelize.sync().then(() => {
     app.listen(process.env.PORT || PORT, () => {
-        
     })
 })
 
