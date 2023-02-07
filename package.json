@@ -4,12 +4,28 @@
   "description": "Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "cd server && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ksubi1x/myBook.git"
+  },
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.10",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "*",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "npmlog": "^7.0.1",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
   },
   "author": "",
   "license": "ISC",
