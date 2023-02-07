@@ -1,5 +1,5 @@
 {
-  "name": "mybook",
+  "name": "myBook",
   "version": "1.0.0",
   "description": "Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this application.",
   "main": "index.js",
