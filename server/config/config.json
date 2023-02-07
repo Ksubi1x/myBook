@@ -16,7 +16,7 @@
   "production": {
     "username": "bc13c46f875448",
     "password": "23cbada5",
-    "database": "database_production",
+    "database": "heroku_1bfa8d26efd457b",
     "host": "us-cdbr-east-06.cleardb.net",
     "dialect": "mysql"
   }

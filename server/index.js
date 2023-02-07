@@ -3,7 +3,6 @@ const app = express()
 const cors = require('cors')
 require('dotenv').config()
 
-
 // initialize app
 // Added procfiles
 
