@@ -1,9 +1,6 @@
-# Crud App Practice
+# My Book
 
-Simple application with the intention of being able to Create, Read, Update, and Delete 'posts' in this
-application.
-
-(Still in the works)
+Simple blog application where users can register and make posts and comment on posts and also delete their own posts if needed.
 
 # Technologies used:
 
@@ -25,4 +22,7 @@ application.
 
 - Axios
 
+# Usage: 
 
+Simply clone the repo locally to your desktop, open the project, cd into server and client, open a terminal for both folders and run
+'npm start' to start the server and client. 
