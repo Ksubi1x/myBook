@@ -22,7 +22,6 @@ Simple blog application where users can register and make posts and comment on p
 
 - Axios
 
-# Usage: 
+# Live Link: 
 
-Simply clone the repo locally to your desktop, open the project, cd into server and client, open a terminal for both folders and run
-'npm start' to start the server and client. 
+https://incredible-tiramisu-d7b018.netlify.app/
