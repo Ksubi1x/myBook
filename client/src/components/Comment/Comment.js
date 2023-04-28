@@ -13,7 +13,7 @@ const Comment = ( { body, creator, commentDB } ) => {
 
   const deleteComment = (commentDB) => {
     console.log(commentDB)
-    axios.delete(`http://localhost:3001/comments/${commentDB}`)
+    axios.delete(`https://mybook12.herokuapp.com/comments/${commentDB}`)
   }
 
   return (

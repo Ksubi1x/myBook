@@ -3,12 +3,13 @@ const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 3001;
 
+
 // initialize app
 // Added procfiles
 
 app.use(express.json())
 app.use(cors())
-
+app.get('/favicon.ico', (req, res) => res.status(204).end())
 // Connect to table we made in 'Models' folder
 const db = require('./models')
 

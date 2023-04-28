@@ -23,24 +23,24 @@ const PostPage = () => {
     let history = useHistory()
     
     useEffect(() => {
-        axios.get(`http://localhost:3001/posts/byId/${id}`).then( (response) => {
+        axios.get(`https://mybook12.herokuapp.com/posts/byId/${id}`).then( (response) => {
             setPostObject(response.data)
         })
 
-        axios.get(`http://localhost:3001/comments/${id}`).then( (response) => {
+        axios.get(`https://mybook12.herokuapp.com/comments/${id}`).then( (response) => {
             setCommentList(response.data)
         })
     }, [])
 
     const deletePost = (id) => {
-        axios.delete(`http://localhost:3001/posts/${id}`, { headers: { accessToken: sessionStorage.getItem("accessToken") } } ).then(() => {
+        axios.delete(`https://mybook12.herokuapp.com/posts/${id}`, { headers: { accessToken: sessionStorage.getItem("accessToken") } } ).then(() => {
             alert('Post deleted')
             history.push('/home')
         })
     }
 
     const addComment = () => {
-        axios.post('http://localhost:3001/comments', {commentBody: newComment, PostId: id}, { headers: { accessToken: sessionStorage.getItem("accessToken") } })
+        axios.post('https://mybook12.herokuapp.com/comments', {commentBody: newComment, PostId: id}, { headers: { accessToken: sessionStorage.getItem("accessToken") } })
         .then((response) => {
             if (response.data.error) {
                 console.log(response.data.error)

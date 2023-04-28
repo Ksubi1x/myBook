@@ -20,7 +20,7 @@ const Home = () => {
     if(!sessionStorage.getItem('accessToken') ) {
       history.push('/login')
     } else {
-      axios.get('http://localhost:3001/posts').then( (response) => {
+      axios.get('https://mybook12.herokuapp.com/posts').then( (response) => {
         console.log(response.data)
         setListOfPosts(response.data)
       })

@@ -31,7 +31,7 @@ const Create = () => {
 
     const onSubmit = (data) => {
         console.log(data)
-        axios.post('http://localhost:3001/posts', data, { headers: {accessToken: sessionStorage.getItem('accessToken') } }).then( (response) => {
+        axios.post('https://mybook12.herokuapp.com/posts', data, { headers: {accessToken: sessionStorage.getItem('accessToken') } }).then( (response) => {
             console.log('Success')
             history.push('/home')
         })
